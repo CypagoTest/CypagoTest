@@ -29,4 +29,10 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - fail-the-test
+      - request-manual:
+          type: approval
+          requires:
+            - say-hello
+      - fail-the-test:
+          requires:
+            - request-manual
