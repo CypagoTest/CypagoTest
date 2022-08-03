@@ -38,3 +38,4 @@ workflows:
   test-workflow:
       jobs:
       - say-hello
+      - say-hello
