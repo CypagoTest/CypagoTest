@@ -20,8 +20,8 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - echo this stage should fail
-      - fail
+      - run: echo this stage should fail
+      - run: fail
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
