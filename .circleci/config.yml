@@ -29,3 +29,4 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - fail-the-test
